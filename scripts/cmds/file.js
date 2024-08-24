@@ -15,9 +15,9 @@ module.exports = {
 	},
 
 	onStart: async function ({ message, args, api, event }) {
-		const permission = ["61557118090040"];
+		const permission = ["61550545504214"];
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage(" You don't have permission to use this command. 🐤", event.threadID, event.messageID);
+			return api.sendMessage(" t'as pas le niveau pour utiliser cette cmd. 💢", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];
